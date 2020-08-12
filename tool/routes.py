@@ -54,7 +54,7 @@ def home():
                     data_ab_comp = data
                     # The overall system snapshot
                     sys_info = data_ab_comp[['WDSName', 'WDS_RA',
-                        'WDS_Dec']]
+                        'WDS_DEC']]
                     # Info for the A component
                     a_comp = data_ab_comp[['WDS_disc', 'components', 'NOBS',
                         'LSTDATE', 'LSTSEP', 'delta_sep', 'delta_PA' 'gaia_PMRA1', 'gaia_PMDEC1',
@@ -72,7 +72,7 @@ def home():
                     data_c_comp = data[data['components'] == 'AC']
                     # System snapshot
                     sys_info = data_ab_comp[['WDSName', 'WDS_RA',
-                        'WDS_Dec']]
+                        'WDS_DEC']]
                     # Info for the A component
                     a_comp = data_ab_comp[['WDS_disc', 'components', 'NOBS',
                         'LSTDATE', 'LSTSEP', 'delta_sep', 'delta_PA', 'gaia_PMRA1', 'gaia_PMDEC1',
@@ -108,7 +108,7 @@ def home():
                     data_d_comp = data[data['components'] == 'AD']
                     # System snapshot
                     sys_info = data_ab_comp[[ 'WDSName', 'WDS_RA',
-                        'WDS_Dec']]
+                        'WDS_DEC']]
                     # Info for the A component
                     a_comp = data_ab_comp[['WDS_disc', 'components', 'NOBS',
                         'LSTDATE', 'LSTSEP', 'delta_sep', 'delta_PA', 'gaia_PMRA1', 'gaia_PMDEC1',
@@ -155,7 +155,7 @@ def home():
                     data_e_comp = data[data['components'] == 'AE']
                     # System snapshot
                     sys_info = data_ab_comp[[ 'WDSName', 'WDS_RA',
-                        'WDS_Dec']]
+                        'WDS_DEC']]
                     # Info for the A component
                     a_comp = data_ab_comp[['WDS_disc', 'components', 'NOBS',
                         'LSTDATE', 'LSTSEP', 'delta_sep', 'delta_PA', 'gaia_PMRA1', 'gaia_PMDEC1',
@@ -214,7 +214,7 @@ def home():
                         data_f_comp = data[data['components'] == 'AF']
                         # System snapshot
                         sys_info = data_ab_comp[[ 'WDSName', 'WDS_RA',
-                            'WDS_Dec']]
+                            'WDS_DEC']]
                         # Info for the A component
                         a_comp = data_ab_comp[['WDS_disc', 'components', 'NOBS',
                             'LSTDATE', 'LSTSEP', 'delta_sep', 'delta_PA', 'gaia_PMRA1', 'gaia_PMDEC1',
