@@ -58,7 +58,7 @@ def home():
                     # Info for the A component
                     a_comp = data_ab_comp[['WDS_disc', 'components', 'NOBS',
                         'LSTDATE', 'LSTSEP', 'delta_sep', 'delta_PA' 'gaia_PMRA1', 'gaia_PMDEC1',
-                        'gaia_mag_1','gaia_mag_2', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_pri','d_sec', 'PM_prob', 'binary_prob', 'physical?',
+                        'gaia_mag_1','gaia_mag_2', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_pri','d_sec', 'PM_Prob', 'Binary_Prob', 'physical?',
                            'dist_prob']]
                     # Convert dataframes to html and then render as a list of tables
                     return render_template('results.html',
@@ -76,12 +76,12 @@ def home():
                     # Info for the A component
                     a_comp = data_ab_comp[['WDS_disc', 'components', 'NOBS',
                         'LSTDATE', 'LSTSEP', 'delta_sep', 'delta_PA', 'gaia_PMRA1', 'gaia_PMDEC1',
-                        'gaia_mag_1', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_pri', 'PM_prob', 'binary_prob', 'physical?',
+                        'gaia_mag_1', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_pri', 'PM_Prob', 'Binary_Prob', 'physical?',
                            'dist_prob']]
                     # Info for the B component
                     b_comp = data_ab_comp[['WDS_disc', 'components', 'NOBS',
                         'LSTDATE', 'LSTSEP', 'delta_sep', 'delta_PA',
-                        'gaia_mag_2', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_sec', 'PM_prob', 'binary_prob', 'physical?',
+                        'gaia_mag_2', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_sec', 'PM_Prob', 'Binary_Prob', 'physical?',
                            'dist_prob']]
                     # Rename the C component columns to more meaninful names
                     c_comp = data_c_comp.rename(columns={
@@ -90,7 +90,7 @@ def home():
                     # C component
                     c_comp = data_c_comp[['WDS_disc', 'components', 'NOBS',
                         'LSTDATE', 'LSTSEP', 'delta_sep', 'delta_PA',
-                        'gaia_mag_3', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_3', 'PM_prob', 'binary_prob', 'physical?',
+                        'gaia_mag_3', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_3', 'PM_Prob', 'Binary_Prob', 'physical?',
                            'dist_prob']]
                     # Convert to html and render as list of tables
                     return render_template('results.html',
@@ -112,12 +112,12 @@ def home():
                     # Info for the A component
                     a_comp = data_ab_comp[['WDS_disc', 'components', 'NOBS',
                         'LSTDATE', 'LSTSEP', 'delta_sep', 'delta_PA', 'gaia_PMRA1', 'gaia_PMDEC1',
-                        'gaia_mag_1', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_pri', 'PM_prob', 'binary_prob', 'physical?',
+                        'gaia_mag_1', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_pri', 'PM_Prob', 'Binary_Prob', 'physical?',
                            'dist_prob']]
                     # Info for the B component
                     b_comp = data_ab_comp[['WDS_disc', 'components', 'NOBS',
                         'LSTDATE', 'LSTSEP', 'delta_sep', 'delta_PA',
-                        'gaia_mag_2', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_sec', 'PM_prob', 'binary_prob', 'physical?',
+                        'gaia_mag_2', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_sec', 'PM_Prob', 'Binary_Prob', 'physical?',
                            'dist_prob']]
                     # Rename the C component columns to more meaninful names
                     c_comp = data_c_comp.rename(columns={
@@ -126,7 +126,7 @@ def home():
                     # C component
                     c_comp = data_c_comp[['WDS_disc', 'components', 'NOBS',
                         'LSTDATE', 'LSTSEP', 'delta_sep', 'delta_PA',
-                        'gaia_mag_3', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_3', 'PM_prob', 'binary_prob', 'physical?',
+                        'gaia_mag_3', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_3', 'PM_Prob', 'Binary_Prob', 'physical?',
                            'dist_prob']]
                     # Rename the D component columns to more meaningful names
                     d_comp = data_d_comp.rename(columns={
@@ -135,7 +135,7 @@ def home():
                     # D component
                     d_comp = data_d_comp[['WDS_disc', 'components', 'NOBS',
                         'LSTDATE', 'LSTSEP', 'delta_sep', 'delta_PA',
-                        'gaia_mag_4', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_4', 'PM_prob', 'binary_prob', 'physical?',
+                        'gaia_mag_4', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_4', 'PM_Prob', 'Binary_Prob', 'physical?',
                            'dist_prob']]
                      # Convert to html and render as list of tables
                     return render_template('results.html',
@@ -159,12 +159,12 @@ def home():
                     # Info for the A component
                     a_comp = data_ab_comp[['WDS_disc', 'components', 'NOBS',
                         'LSTDATE', 'LSTSEP', 'delta_sep', 'delta_PA', 'gaia_PMRA1', 'gaia_PMDEC1',
-                        'gaia_mag_1', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_pri', 'PM_prob', 'binary_prob', 'physical?',
+                        'gaia_mag_1', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_pri', 'PM_Prob', 'Binary_Prob', 'physical?',
                            'dist_prob']]
                     # Info for the B component
                     b_comp = data_ab_comp[['WDS_disc', 'components', 'NOBS',
                         'LSTDATE', 'LSTSEP', 'delta_sep', 'delta_PA',
-                        'gaia_mag_2', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_sec', 'PM_prob', 'binary_prob', 'physical?',
+                        'gaia_mag_2', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_sec', 'PM_Prob', 'Binary_Prob', 'physical?',
                            'dist_prob']]
                     # Rename the C component columns to more meaninful names
                     c_comp = data_c_comp.rename(columns={
@@ -173,7 +173,7 @@ def home():
                     # C component
                     c_comp = data_c_comp[['WDS_disc', 'components', 'NOBS',
                         'LSTDATE', 'LSTSEP', 'delta_sep', 'delta_PA',
-                        'gaia_mag_3', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_3', 'PM_prob', 'binary_prob', 'physical?',
+                        'gaia_mag_3', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_3', 'PM_Prob', 'Binary_Prob', 'physical?',
                            'dist_prob']]
                     # Rename the D component columns to more meaningful names
                     d_comp = data_d_comp.rename(columns={
@@ -182,7 +182,7 @@ def home():
                     # D component
                     d_comp = data_d_comp[['WDS_disc', 'components', 'NOBS',
                         'LSTDATE', 'LSTSEP', 'delta_sep', 'delta_PA',
-                        'gaia_mag_4', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_4', 'PM_prob', 'binary_prob', 'physical?',
+                        'gaia_mag_4', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_4', 'PM_Prob', 'Binary_Prob', 'physical?',
                            'dist_prob']]
                     # Rename the E component columns to more meaningful names
                     e_comp = data_e_comp.rename(columns={
@@ -191,7 +191,7 @@ def home():
                     # E component
                     e_comp = data_e_comp[['WDS_disc', 'components', 'NOBS',
                         'LSTDATE', 'LSTSEP', 'delta_sep', 'delta_PA',
-                        'gaia_mag_5', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_5', 'PM_prob', 'binary_prob', 'physical?',
+                        'gaia_mag_5', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_5', 'PM_Prob', 'Binary_Prob', 'physical?',
                            'dist_prob']]
                      # Convert to html and render as list of tables
                     return render_template('results.html',
@@ -218,12 +218,12 @@ def home():
                         # Info for the A component
                         a_comp = data_ab_comp[['WDS_disc', 'components', 'NOBS',
                             'LSTDATE', 'LSTSEP', 'delta_sep', 'delta_PA', 'gaia_PMRA1', 'gaia_PMDEC1',
-                            'gaia_mag_1', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_pri', 'PM_prob', 'binary_prob', 'physical?',
+                            'gaia_mag_1', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_pri', 'PM_Prob', 'Binary_Prob', 'physical?',
                                'dist_prob']]
                         # Info for the B component
                         b_comp = data_ab_comp[['WDS_disc', 'components', 'NOBS',
                             'LSTDATE', 'LSTSEP', 'delta_sep', 'delta_PA',
-                            'gaia_mag_2', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_sec', 'PM_prob', 'binary_prob', 'physical?',
+                            'gaia_mag_2', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_sec', 'PM_Prob', 'Binary_Prob', 'physical?',
                                'dist_prob']]
                         # Rename the C component columns to more meaninful names
                         c_comp = data_c_comp.rename(columns={
@@ -232,7 +232,7 @@ def home():
                         # C component
                         c_comp = data_c_comp[['WDS_disc', 'components', 'NOBS',
                             'LSTDATE', 'LSTSEP', 'delta_sep', 'delta_PA',
-                            'gaia_mag_3', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_3', 'PM_prob', 'binary_prob', 'physical?',
+                            'gaia_mag_3', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_3', 'PM_Prob', 'Binary_Prob', 'physical?',
                                'dist_prob']]
                         # Rename the D component columns to more meaningful names
                         d_comp = data_d_comp.rename(columns={
@@ -241,7 +241,7 @@ def home():
                         # D component
                         d_comp = data_d_comp[['WDS_disc', 'components', 'NOBS',
                             'LSTDATE', 'LSTSEP', 'delta_sep', 'delta_PA',
-                            'gaia_mag_4', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_4', 'PM_prob', 'binary_prob', 'physical?',
+                            'gaia_mag_4', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_4', 'PM_Prob', 'Binary_Prob', 'physical?',
                                'dist_prob']]
                         # Rename the E component columns to more meaningful names
                         e_comp = data_e_comp.rename(columns={
@@ -250,7 +250,7 @@ def home():
                         # E component
                         e_comp = data_e_comp[['WDS_disc', 'components', 'NOBS',
                             'LSTDATE', 'LSTSEP', 'delta_sep', 'delta_PA',
-                            'gaia_mag_5', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_5', 'PM_prob', 'binary_prob', 'physical?',
+                            'gaia_mag_5', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_5', 'PM_Prob', 'Binary_Prob', 'physical?',
                                'dist_prob']]
                         # Rename the F component columns to more meaningful names
                         f_comp = data_f_comp.rename(columns={
@@ -259,7 +259,7 @@ def home():
                         # F component
                         f_comp = data_e_comp[['WDS_disc', 'components', 'NOBS',
                             'LSTDATE', 'LSTSEP', 'delta_sep', 'delta_PA',
-                            'gaia_mag_6', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_6', 'PM_prob', 'binary_prob', 'physical?',
+                            'gaia_mag_6', 'delta_mag_GAIA', 'STYPE', 'NOTES', 'd_6', 'PM_Prob', 'Binary_Prob', 'physical?',
                                'dist_prob']]
                          # Convert to html and render as list of tables
                         return render_template('results.html',
@@ -346,7 +346,7 @@ def home():
             a_comp = data.head(20)[['WDSName', 'components', 'NOBS',
                 'LSTDATE', 'LSTSEP', 'delta_sep', 'delta_PA', 'gaia_mag_1', 'gaia_mag_2', 'delta_mag_GAIA', 'STYPE',
                 'NOTES', 'd_pri', 'd_sec', 'dist_prob',
-                'Binary_Prob','HARSHAW_GAIA', 'physical?']]
+                'PM_Prob', 'Binary_Prob','HARSHAW_GAIA', 'physical?']]
 
         # Return a list of tables to be rendered
             return render_template('results.html',
