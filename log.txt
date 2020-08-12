@@ -1,0 +1,20 @@
+2020-08-12 09:33:21.945723
+
+
+WDS_name : 
+min_mag : 10.0
+max_mag : 5.0
+min_ra : 110000.0
+max_ra : 180000.0
+min_dec : -90.0
+max_dec : 50.0
+min_sep : 5.0
+max_sep : 20.0
+max_delta_mag : 3.0
+min_nobs : 2.0
+nobs : 10.0
+last_obs : 2003.0
+min_d_sep : 0.1
+max_d_sep : 1.0
+submit : True
+csrf_token : ImQxNGRkNWJhMGU1ZDVkYTYyOGIzM2M3YzljM2QwMzFmYTY4MDZiZTQi.XzQZnQ.osoiN5ozv3h4Bfd95nQcur-5VXg
