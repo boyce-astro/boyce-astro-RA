@@ -5,6 +5,8 @@
     <h1>DoubleSTARS Query</h1>
     <form method="POST">
         {{ form.hidden_tag() }}
+	<h3>The Research Assistant is a search engine for a composite database of information from the WDS as of mid-2018, Gaia Data Release 2 (DR2), and some statistical “probabilities” of star pairs being gravitationally bound as calculated by Richard Harshaw using the DR2 data. The full DR2 portion and Harshaw calculations are displayed in SUPPORT INFORMATION. Page 1 of the file describes the algorithms devised by Richard Harshaw to determine quantitative measures of likelihoods in the database.</h3>
+	<br>  
         <h3>Choose to search by WDS Name for a single candidate or apply filters to get a list of targets.</h3>
         <br>
         <div class="form-group">
@@ -78,7 +80,7 @@
         </div>
         <br>
         <div class="form-group">
-          <h5>Separation: Avoid minimum less than 5 and maximum greater than 50.</h5>
+          <h5>Separation: Avoid minimum less than 5 and maximum greater than 25 for CCD observations.  For speckle observations, use a minimum of 1 and a maximum of 5.</h5>
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
@@ -98,7 +100,7 @@
         </div>
         <br>
         <div class="form-group">
-          <h5>Max Delta Magnitude: How much fainter the secondary component can be. <br>
+          <h5>Max Delta Magnitude: How much fainter the secondary component can be than the primary. <br>
           Keep under 3.</h5>
         </div>
         <div class="form-row">
@@ -116,7 +118,7 @@
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="min_d_sep">Minimum Delta Separation</label>
-            <input type="text" class="form-control" id="min_d_sep" name="min_d_sep" placeholder="ex: .1">
+            <input type="text" class="form-control" id="min_d_sep" name="min_d_sep" placeholder="ex: 0.1">
             {% for error in form.min_d_sep.errors %}
             <span style="color: red;">[{{ error }}]</span>
             {% endfor %}	</div>
@@ -127,13 +129,13 @@
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="max_d_sep">Maximum Delta Separation</label>
-            <input type="text" class="form-control" id="max_d_sep" name="max_d_sep" placeholder="ex: .5">
+            <input type="text" class="form-control" id="max_d_sep" name="max_d_sep" placeholder="ex: 0.5">
             {% for error in form.max_d_sep.errors %}
             <span style="color: red;">[{{ error }}]</span>
             {% endfor %}	</div>
         </div><br>
         <div class="form-group">
-          <h5>Minimum Number of Observations (Use to find uncertain doubles)</h5>
+          <h5>Minimum Number of Observations (Use to find uncertain or neglegted doubles)</h5>
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
@@ -144,7 +146,7 @@
             {% endfor %}          </div>
         </div><br>
         <div class="form-group">
-          <h5>Maximum Number of Observations (Use to find uncertain doubles)</h5>
+          <h5>Maximum Number of Observations (Use to find uncertain or neglected doubles)</h5>
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
