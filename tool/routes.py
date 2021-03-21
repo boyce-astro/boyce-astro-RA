@@ -385,10 +385,10 @@ def download():
         data = data[data['WDS_RA'] <= content['max_ra']]
     # By min Dec
     if content['min_dec']:
-        data = data[data['gaia_Dec_1'] >= content['min_dec']]
+        data = data[data['WDS_DEC'] >= content['min_dec']]
     # By max Dec
     if content['max_dec']:
-        data = data[data['gaia_Dec_1'] <= content['max_dec']]
+        data = data[data['WDS_DEC'] <= content['max_dec']]
     # By min mag
     if content['min_mag']:
         data = data[data['gaia_mag_1'] <= content['min_mag']]
