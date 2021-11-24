@@ -1,10 +1,10 @@
 Author: Alex Hewett
-Editor: Catrina Brunkow
+Editor: Vik Brunkow
 Developed for Boyce Astro in 2019 in San Diego, CA for double star astronomy research. The tool is designed to simplify 
 the target selection process and give preliminary analysis of candidates. 
-Editted in 2020 by Catrina Brunkow 
+Editted in 2020 by Vik Brunkow 
 Most of the application is located in the "tool" directory. The main runtime script is located in "routes.py".
 
 The dataset is an enhanced version of a database made by Dave Rowe. The original dataset comes from the 
 Washington Double Star Catalog that is maintained by the US Naval Observatory. The additional data comes the GAIA DR2, 
-an analysis done by Richard Harshaw, and work done by Alex Hewett and Catrina Brunkow. 
+an analysis done by Richard Harshaw, and work done by Alex Hewett and Vik Brunkow. 
